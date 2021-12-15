@@ -5,7 +5,19 @@ public class Main {
 
     public static void main(String[] args){
         enum cardVal {
-            TWO("2", 2);
+            TWO("2", 2),
+            THREE("3", 3),
+            FOUR("4", 4),
+            FIVE("5", 5),
+            SIX("6", 6),
+            SEVEN("7", 7),
+            EIGHT("8", 8),
+            NINE("9", 9),
+            TEN("T", 10),
+            JACK("J", 11),
+            QUEEN("Q", 12),
+            KING("K", 13),
+            ACE("A", 14);
 
             final String text;
             final Integer val;
@@ -15,7 +27,7 @@ public class Main {
                 this.val = val;
             }
         }
-        
+
         String testInput = "4H 4C 6S 7S KD 2C 3S 9S 9D TD";
 
         // Regex check for input
@@ -29,6 +41,8 @@ public class Main {
 
         System.out.printf("Player 1 hand: %s\n", p1_hand);
         System.out.printf("Player 2 hand: %s", p2_hand);
+
+
 
 
     }
