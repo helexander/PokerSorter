@@ -36,7 +36,7 @@ public class Main {
 
         // Expecting output to be
         // 4 4 6 7 13
-        System.out.println(cards.shoutCard());
+//        System.out.println(cards.shoutCard());
 
     }
 }
