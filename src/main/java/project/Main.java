@@ -21,16 +21,22 @@ public class Main {
         System.out.printf("Player 1 hand: %s\n", p1_hand);
         System.out.printf("Player 2 hand: %s\n", p2_hand);
 
-        // To test, print out card value and card suit in the form of its enum value
-        List<Card> cards = new ArrayList<Card>();
 
-        // Would require to assign the cards to a hand
+        List<Card> cards = new ArrayList<>();
+
+        // Would require to assign the cards to a hand later
         cards.add(new Card(p1_hand.substring(0, 2)));
         cards.add(new Card(p1_hand.substring(3, 5)));
         cards.add(new Card(p1_hand.substring(6, 8)));
         cards.add(new Card(p1_hand.substring(9, 11)));
         cards.add(new Card(p1_hand.substring(12, 14)));
 
-        System.out.printf("\nThese are player 1's cards: %s", cards.toString());
+        // To test, print out card value and card suit in the form of its enum value
+//        System.out.printf("\nThese are the value of player 1's cards: %s", cards.get(0).toString());
+
+        // Expecting output to be
+        // 4 4 6 7 13
+        System.out.println(cards.shoutCard());
+
     }
 }
